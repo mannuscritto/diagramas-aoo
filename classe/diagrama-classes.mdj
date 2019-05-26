@@ -12313,7 +12313,7 @@
 											"font": "Arial;13;1",
 											"left": 749,
 											"top": 399,
-											"width": 111.66162109375,
+											"width": 212.82421875,
 											"height": 13,
 											"text": "Pagamento"
 										},
@@ -12348,7 +12348,7 @@
 									"font": "Arial;13;0",
 									"left": 744,
 									"top": 392,
-									"width": 121.66162109375,
+									"width": 222.82421875,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFq8pMD22x+ZkU="
@@ -12385,7 +12385,7 @@
 											"font": "Arial;13;0",
 											"left": 749,
 											"top": 422,
-											"width": 111.66162109375,
+											"width": 212.82421875,
 											"height": 13,
 											"text": "+horas trabalhadas",
 											"horizontalAlignment": 0
@@ -12402,7 +12402,7 @@
 											"font": "Arial;13;0",
 											"left": 749,
 											"top": 437,
-											"width": 111.66162109375,
+											"width": 212.82421875,
 											"height": 13,
 											"text": "+dtInicioPeriodo",
 											"horizontalAlignment": 0
@@ -12419,7 +12419,7 @@
 											"font": "Arial;13;0",
 											"left": 749,
 											"top": 452,
-											"width": 111.66162109375,
+											"width": 212.82421875,
 											"height": 13,
 											"text": "+dtTerminoPeriodo",
 											"horizontalAlignment": 0
@@ -12428,7 +12428,7 @@
 									"font": "Arial;13;0",
 									"left": 744,
 									"top": 417,
-									"width": 121.66162109375,
+									"width": 222.82421875,
 									"height": 53
 								},
 								{
@@ -12453,7 +12453,7 @@
 											"font": "Arial;13;0",
 											"left": 749,
 											"top": 475,
-											"width": 111.66162109375,
+											"width": 212.82421875,
 											"height": 13,
 											"text": "+salvar()",
 											"horizontalAlignment": 0
@@ -12470,7 +12470,7 @@
 											"font": "Arial;13;0",
 											"left": 749,
 											"top": 490,
-											"width": 111.66162109375,
+											"width": 212.82421875,
 											"height": 13,
 											"text": "+remover()",
 											"horizontalAlignment": 0
@@ -12487,16 +12487,16 @@
 											"font": "Arial;13;0",
 											"left": 749,
 											"top": 505,
-											"width": 111.66162109375,
+											"width": 212.82421875,
 											"height": 13,
-											"text": "+buscar()",
+											"text": "+buscar(): Pagamento[1..*] {ordered}",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 744,
 									"top": 470,
-									"width": 121.66162109375,
+									"width": 222.82421875,
 									"height": 53
 								},
 								{
@@ -12536,7 +12536,7 @@
 							"containerChangeable": true,
 							"left": 744,
 							"top": 392,
-							"width": 121.66162109375,
+							"width": 222.82421875,
 							"height": 131,
 							"nameCompartment": {
 								"$ref": "AAAAAAFq8pMD22x9vZk="
@@ -15386,7 +15386,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFq8pMD1Wx6Cck="
 							},
-							"name": "horas trabalhadas"
+							"name": "horas trabalhadas",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -15394,7 +15395,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFq8pMD1Wx6Cck="
 							},
-							"name": "dtInicioPeriodo"
+							"name": "dtInicioPeriodo",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -15402,7 +15404,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFq8pMD1Wx6Cck="
 							},
-							"name": "dtTerminoPeriodo"
+							"name": "dtTerminoPeriodo",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -15428,7 +15431,23 @@
 							"_parent": {
 								"$ref": "AAAAAAFq8pMD1Wx6Cck="
 							},
-							"name": "buscar"
+							"name": "buscar",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFq8qeu0YHWdCA=",
+									"_parent": {
+										"$ref": "AAAAAAFq8prAOZJHz4Q="
+									},
+									"name": "pagamentos",
+									"type": {
+										"$ref": "AAAAAAFq8pMD1Wx6Cck="
+									},
+									"multiplicity": "1..*",
+									"isOrdered": true,
+									"direction": "return"
+								}
+							]
 						}
 					]
 				},
@@ -15446,7 +15465,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFq8pv0PJXShq0="
 							},
-							"name": "vlrInicial"
+							"name": "vlrInicial",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -15454,7 +15474,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFq8pv0PJXShq0="
 							},
-							"name": "vlrFinal"
+							"name": "vlrFinal",
+							"type": ""
 						}
 					],
 					"operations": [
