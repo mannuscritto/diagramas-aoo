@@ -12734,7 +12734,7 @@
 											"font": "Arial;13;1",
 											"left": 29,
 											"top": 767,
-											"width": 85.26171875,
+											"width": 226.5478515625,
 											"height": 13,
 											"text": "BalancoCaixa"
 										},
@@ -12767,7 +12767,7 @@
 									"font": "Arial;13;0",
 									"left": 24,
 									"top": 760,
-									"width": 95.26171875,
+									"width": 236.5478515625,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFq8pv0PZXW9X8="
@@ -12804,7 +12804,7 @@
 											"font": "Arial;13;0",
 											"left": 29,
 											"top": 790,
-											"width": 85.26171875,
+											"width": 226.5478515625,
 											"height": 13,
 											"text": "+vlrInicial",
 											"horizontalAlignment": 0
@@ -12821,7 +12821,7 @@
 											"font": "Arial;13;0",
 											"left": 29,
 											"top": 805,
-											"width": 85.26171875,
+											"width": 226.5478515625,
 											"height": 13,
 											"text": "+vlrFinal",
 											"horizontalAlignment": 0
@@ -12830,7 +12830,7 @@
 									"font": "Arial;13;0",
 									"left": 24,
 									"top": 785,
-									"width": 95.26171875,
+									"width": 236.5478515625,
 									"height": 38
 								},
 								{
@@ -12855,7 +12855,7 @@
 											"font": "Arial;13;0",
 											"left": 29,
 											"top": 828,
-											"width": 85.26171875,
+											"width": 226.5478515625,
 											"height": 13,
 											"text": "+salvar()",
 											"horizontalAlignment": 0
@@ -12872,7 +12872,7 @@
 											"font": "Arial;13;0",
 											"left": 29,
 											"top": 843,
-											"width": 85.26171875,
+											"width": 226.5478515625,
 											"height": 13,
 											"text": "+remover()",
 											"horizontalAlignment": 0
@@ -12889,16 +12889,16 @@
 											"font": "Arial;13;0",
 											"left": 29,
 											"top": 858,
-											"width": 85.26171875,
+											"width": 226.5478515625,
 											"height": 13,
-											"text": "+buscar()",
+											"text": "+buscar(): BalancoCaixa[0..*] {ordered}",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 24,
 									"top": 823,
-									"width": 95.26171875,
+									"width": 236.5478515625,
 									"height": 53
 								},
 								{
@@ -12936,7 +12936,7 @@
 							"containerChangeable": true,
 							"left": 24,
 							"top": 760,
-							"width": 95.26171875,
+							"width": 236.5478515625,
 							"height": 116,
 							"nameCompartment": {
 								"$ref": "AAAAAAFq8pv0PZXVj/Y="
@@ -18681,7 +18681,23 @@
 							"_parent": {
 								"$ref": "AAAAAAFq8pv0PJXShq0="
 							},
-							"name": "buscar"
+							"name": "buscar",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFq8qk06p/Y53k=",
+									"_parent": {
+										"$ref": "AAAAAAFq8p4PIaSfqdE="
+									},
+									"name": "balancos",
+									"type": {
+										"$ref": "AAAAAAFq8pv0PJXShq0="
+									},
+									"multiplicity": "0..*",
+									"isOrdered": true,
+									"direction": "return"
+								}
+							]
 						}
 					]
 				},
